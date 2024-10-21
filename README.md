@@ -17,3 +17,23 @@ A entrega deste exercício consiste em:
 • Publique o projeto na Vercel;
 
 • Enviar o link através da plataforma da EBAC.
+
+## Inspirações
+
+https://myanimelist.net/animelist/getNorted
+
+https://my-hero-academy.vercel.app/
+
+https://projeto-lendas.vercel.app/
+
+https://cine-ex-cinema.vercel.app/
+
+https://ebac-m13-front.vercel.app/
+
+https://livrinhos-encantados.vercel.app/
+
+https://cine-art-project.vercel.app/
+
+## Códigos aulas
+
+https://github.com/ogiansouza/curso_frontend_ebac/tree/bootstrap_avancado
