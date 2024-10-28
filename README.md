@@ -20,19 +20,14 @@ A entrega deste exercício consiste em:
 
 ## Inspirações
 
-https://myanimelist.net/animelist/getNorted
-
-https://my-hero-academy.vercel.app/
-
-https://projeto-lendas.vercel.app/
-
-https://cine-ex-cinema.vercel.app/
-
-https://ebac-m13-front.vercel.app/
-
-https://livrinhos-encantados.vercel.app/
-
-https://cine-art-project.vercel.app/
+https://myanimelist.net/animelist/sunnysummerday?status=7  
+https://myanimelist.net/animelist/getNorted  
+https://my-hero-academy.vercel.app/  
+https://projeto-lendas.vercel.app/  
+https://cine-ex-cinema.vercel.app/  
+https://ebac-m13-front.vercel.app/  
+https://livrinhos-encantados.vercel.app/  
+https://cine-art-project.vercel.app/  
 
 ## Códigos aulas
 

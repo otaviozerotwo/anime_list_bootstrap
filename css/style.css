@@ -45,7 +45,6 @@ body {
 }
   
 .bg-img-1 {
-  height: 124px;
   background-image: url('../assets/img/ryou-ouki.png');
 }
 
@@ -55,7 +54,7 @@ body {
 }
 
 .bg-img-3 {
-  background-image: url('../assets/img/saki.png');
+  background-image: url('../assets/img/elrics.png');
 }
 
 @keyframes carousel-animation {
