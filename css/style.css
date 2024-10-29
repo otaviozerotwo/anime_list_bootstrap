@@ -7,10 +7,6 @@ body {
   transition: all 0.9s ease;
 }
 
-/* .navbar-custom > .container {
-  border-bottom: 8px solid #FFF;
-}  */
-
 .navbar-fixed {
   position: fixed;
   top: 0;
@@ -21,6 +17,9 @@ body {
 
 .navbar-nav .nav-link.active {
   color: #FFF;
+  background-color: #212529;
+  border-radius: 0;
+  border-bottom: 1px solid #FFF;
 }
 
 .nav-link {
