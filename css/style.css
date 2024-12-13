@@ -1,10 +1,11 @@
 body {
-  background-color: #2a2b2c;
+  background-color: #023047;
   color: #FFF;
 }
 
 .navbar-custom {
   transition: all 0.9s ease;
+  background-color: #219ebc;
 }
 
 .navbar-fixed {
@@ -15,15 +16,24 @@ body {
   z-index: 1000;
 }
 
+.nav-item {
+  font-weight: bold;
+}
+
 .navbar-nav .nav-link.active {
-  color: #FFF;
-  background-color: #212529;
+  color: #ffb703;
+  background-color: #219ebc;
   border-radius: 0;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #ffb703;
 }
 
 .nav-link {
   text-align: center;
+}
+
+.offcanvas-custom {
+  background-color: #219ebc;
+  opacity: 0.9;
 }
 
 .carousel-inner {
@@ -86,6 +96,17 @@ body {
   width: 3.5rem;
 }
 
+/* @media (max-width: 1024px) {
+  .img-user-custom {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+} */
+
+.bg-custom {
+  --bs-bg-opacity: .5;
+}
+
 .card {
   height: 100%;
   transition: all 0.3s ease;
@@ -111,6 +132,7 @@ body {
 }
 
 footer {
+  background-color: #219ebc;
   color: #FFF;
 }
 
