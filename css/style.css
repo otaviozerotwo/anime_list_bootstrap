@@ -65,3 +65,51 @@ body {
   }
 }
 
+.img-user-custom {
+  display: block;
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  transform: translateY(-50%);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+.img-user-custom:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-user-size-custom {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.card {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card-img-custom {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.p-custom {
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+
+.section-custom {
+  margin-bottom: 6rem;
+}
