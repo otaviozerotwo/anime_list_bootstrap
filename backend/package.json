@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otaviozerotwo/anime_list_bootstrap.git"
+  },
+  "author": "Otávio Cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otaviozerotwo/anime_list_bootstrap/issues"
+  },
+  "homepage": "https://github.com/otaviozerotwo/anime_list_bootstrap#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
