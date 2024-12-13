@@ -98,7 +98,7 @@ body {
 
 .card-img-custom {
   display: block;
-  height: auto;
+  height: 100%;
   width: 100%;
   max-width: 100%;
   object-fit: cover;
