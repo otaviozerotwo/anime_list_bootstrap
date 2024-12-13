@@ -38,38 +38,42 @@
       </div>
     </div>
 
-    <div id="navbar" class="navbar bg-dark navbar-expand-lg navbar-custom" data-bs-theme="dark">
+    <nav id="navbar" class="navbar bg-dark navbar-expand-lg navbar-custom" data-bs-theme="dark">
       <div class="container col-lg-8">
         <a class="navbar-brand" href="#">
           <img src="./assets/img/ryou-ouki.png" id="imgUser" class="img-thumbnail rounded-circle border border-5 border-white border-opacity-75 img-user-custom" alt="">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <nav class="collapse navbar-collapse justify-content-center" id="navbar">
-          <ul class="nav nav-pills navbar-nav gap-3">
-            <li class="nav-item">
-              <a href="#watching" class="nav-link active">Watching</a>
-            </li>
-            <li class="nav-item">
-              <a href="#completed" class="nav-link">Completed</a>
-            </li>
-            <li class="nav-item">
-              <a href="#onHold" class="nav-link">On Hold</a>
-            </li>
-            <li class="nav-item">
-              <a href="#dropped" class="nav-link">Dropped</a>
-            </li>
-            <li class="nav-item">
-              <a href="#planToWatch" class="nav-link">Plan to Watch</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a href="#watching" class="nav-link active" aria-current="page">Watching</a>
+              </li>
+              <li class="nav-item">
+                <a href="#completed" class="nav-link">Completed</a>
+              </li>
+              <li class="nav-item">
+                <a href="#onHold" class="nav-link">On Hold</a>
+              </li>
+              <li class="nav-item">
+                <a href="#dropped" class="nav-link">Dropped</a>
+              </li>
+              <li class="nav-item">
+                <a href="#planToWatch" class="nav-link">Plan to Watch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
+    </nav>
   </header>
 
   <div class="container col-lg-8" data-bs-spy="scroll" data-bs-target="#header">
@@ -81,7 +85,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Dandadan</p>  
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1584/143719.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1584/143719.jpg" class="card-img-top card-img-custom" alt="Poster Dandadan">
             <div class="card-body">
               <p class="card-text">Fall 2024</p>
             </div>
@@ -93,7 +97,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Dragon Ball Daima</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1723/145231.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1723/145231.jpg" class="card-img-top card-img-custom" alt="Poster Dragon Ball">
             <div class="card-body">
               <p class="card-text">Fall 2024</p>
             </div>
@@ -105,7 +109,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Kekkon suru tte, Hontou desu ka</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1572/145903.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1572/145903.jpg" class="card-img-top card-img-custom" alt="Poster Kekkon suru tte, Hontou desu ka">
             <div class="card-body">
               <p class="card-text">Fall 2024</p>
             </div>
@@ -117,7 +121,7 @@
             <div class="card-header">
               <p class="h5 p-custom">NegaPosi Angler</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1537/145325.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1537/145325.jpg" class="card-img-top card-img-custom" alt="Poster NegaPosi Angler">
             <div class="card-body">
               <p class="card-text">Fall 2024</p>
             </div>
@@ -135,7 +139,7 @@
             <div class="card-header">
               <p class="h5 p-custom">16bit Sensation: Another Layer</p>  
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1588/138395.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1588/138395.jpg" class="card-img-top card-img-custom" alt="Poster 16bit Sensation: Another Layer">
             <div class="card-body">
               <p class="card-text">Fall 2023</p>
             </div>
@@ -147,7 +151,7 @@
             <div class="card-header">
               <p class="h5 p-custom">3-gatsu no Lion</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/3/82899.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/3/82899.jpg" class="card-img-top card-img-custom" alt="Poster 3-gatsu no Lion">
             <div class="card-body">
               <p class="card-text">Fall 2016</p>
             </div>
@@ -159,7 +163,7 @@
             <div class="card-header">
               <p class="h5 p-custom">3-gatsu no Lion 2nd Season</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/3/88469.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/3/88469.jpg" class="card-img-top card-img-custom" alt="Poster 3-gatsu no Lion 2nd Season">
             <div class="card-body">
               <p class="card-text">Fall 2017</p>
             </div>
@@ -171,7 +175,7 @@
             <div class="card-header">
               <p class="h5 p-custom">3x3 Eyes</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/4/26940.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/4/26940.jpg" class="card-img-top card-img-custom" alt="Poster 3x3 Eyes">
             <div class="card-body">
               <p class="card-text">1991/1992</p>
             </div>
@@ -183,7 +187,7 @@
             <div class="card-header">
               <p class="h5 p-custom">3x3 Eyes: Seima Densetsu</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1288/120666.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1288/120666.jpg" class="card-img-top card-img-custom" alt="Poster 3x3 Eyes: Seima Densetsu">
             <div class="card-body">
               <p class="card-text">1995/1996</p>
             </div>
@@ -195,7 +199,7 @@
             <div class="card-header">
               <p class="h5 p-custom">86</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1987/117507.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1987/117507.jpg" class="card-img-top card-img-custom" alt="Poster 86">
             <div class="card-body">
               <p class="card-text">Spring 2021</p>
             </div>
@@ -213,7 +217,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Astro Boy: Tetsuwan Atom</p>  
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1611/94026.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1611/94026.jpg" class="card-img-top card-img-custom" alt="Poster Astro Boy: Tetsuwan Atom">
             <div class="card-body">
               <p class="card-text">Spring 2003</p>
             </div>
@@ -225,7 +229,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Blood+</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/10/10183.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/10/10183.jpg" class="card-img-top card-img-custom" alt="Poster Blood+">
             <div class="card-body">
               <p class="card-text">Fall 2005</p>
             </div>
@@ -237,7 +241,7 @@
             <div class="card-header">
               <p class="h5 p-custom">InuYasha</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1589/95329.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1589/95329.jpg" class="card-img-top card-img-custom" alt="Poster InuYasha">
             <div class="card-body">
               <p class="card-text">Fall 2000</p>
             </div>
@@ -255,7 +259,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Amagami SS</p>  
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/10/78699.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/10/78699.jpg" class="card-img-top card-img-custom" alt="Poster Amagami SS">
             <div class="card-body">
               <p class="card-text">Summer 2010</p>
             </div>
@@ -267,7 +271,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Ao Ashi</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1731/120871.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1731/120871.jpg" class="card-img-top card-img-custom" alt="Poster Ao Ashi">
             <div class="card-body">
               <p class="card-text">Spring 2022</p>
             </div>
@@ -279,7 +283,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Aria the Animation</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/2/77620.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/2/77620.jpg" class="card-img-top card-img-custom" alt="Poster Aria the Animation">
             <div class="card-body">
               <p class="card-text">Fall 2005</p>
             </div>
@@ -291,7 +295,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Boukyaku Battery (TV)</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1372/142242.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1372/142242.jpg" class="card-img-top card-img-custom" alt="Poster Boukyaku Battery (TV)">
             <div class="card-body">
               <p class="card-text">Spring 2024</p>
             </div>
@@ -303,7 +307,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Bullbuster</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1074/138192.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1074/138192.jpg" class="card-img-top card-img-custom" alt="Poster Bullbuster">
             <div class="card-body">
               <p class="card-text">Fall 2023</p>
             </div>
@@ -315,7 +319,7 @@
             <div class="card-header">
               <p class="h5 p-custom">ClassicaLoid</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/10/82320.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/10/82320.jpg" class="card-img-top card-img-custom" alt="Poster ClassicaLoid">
             <div class="card-body">
               <p class="card-text">Fall 2016</p>
             </div>
@@ -333,7 +337,7 @@
             <div class="card-header">
               <p class="h5 p-custom">"Eiji"</p>  
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/7/38319.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/7/38319.jpg" class="card-img-top card-img-custom" alt="Poster Eiji">
             <div class="card-body">
               <p class="card-text">Aug 1990</p>
             </div>
@@ -345,7 +349,7 @@
             <div class="card-header">
               <p class="h5 p-custom">Alice to Therese no Maboroshi Koujou</p>
             </div>
-            <img src="https://cdn.myanimelist.net/images/anime/1429/137275.jpg" class="card-img-top card-img-custom" alt="">
+            <img src="https://cdn.myanimelist.net/images/anime/1429/137275.jpg" class="card-img-top card-img-custom" alt="Poster Alice to Therese no Maboroshi Koujou">
             <div class="card-body">
               <p class="card-text">Sep 2023</p>
             </div>
