@@ -1,6 +1,7 @@
 body {
   background-color: #023047;
   color: #FFF;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar-custom {
@@ -96,20 +97,19 @@ body {
   width: 3.5rem;
 }
 
-/* @media (max-width: 1024px) {
-  .img-user-custom {
-    height: 3.5rem;
-    width: 3.5rem;
-  }
-} */
-
 .bg-custom {
   --bs-bg-opacity: .5;
+}
+
+.section-title {
+  color: #ffb703;
 }
 
 .card {
   height: 100%;
   transition: all 0.3s ease;
+  background-color: #fb8500;
+  color: #FFF;
 }
 
 .card:hover {
