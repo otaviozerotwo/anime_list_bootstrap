@@ -42,29 +42,24 @@ body {
   overflow: hidden;
 }
 
-.custom-carousel-container {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-}
-
-.bg-img {
+.container-img-carousel {
   width: 100%;
-  height: 124px;
+  height: 11rem;
   background-size: contain;
   background-repeat: repeat-x;
   animation: carousel-animation 15s linear infinite;
 }
   
-.bg-img-1 {
-  background-image: url('../assets/img/ryou-ouki.png');
+.img-carousel-1 {
+  background-image: url('https://wallpapers.com/images/hd/3840x1080-anime-monogatari-series-characters-b43bh9e1mkbzjpbw.jpg');
 }
 
-.bg-img-2 {
-  height: 244px;
-  background-image: url('../assets/img/evangelion.png');
+.img-carousel-2 {
+  background-image: url('https://mrwallpaper.com/images/thumbnail/a-group-of-anime-characters-in-different-colors-d29rdm5uwp84iqrv.webp');
 }
 
-.bg-img-3 {
-  background-image: url('../assets/img/elrics.png');
+.img-carousel-3 {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/9/874/350/anime-girls-monochrome-glitch-art-wallpaper-thumb.jpg');
 }
 
 @keyframes carousel-animation {
