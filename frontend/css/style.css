@@ -28,6 +28,10 @@ body {
   text-align: center;
 }
 
+.navbar-toggler {
+  background-color: #023047;
+}
+
 .offcanvas-custom {
   background-color: #219ebc;
   opacity: 0.9;
