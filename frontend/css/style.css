@@ -17,10 +17,6 @@ body {
   z-index: 1000;
 }
 
-.nav-item {
-  font-weight: bold;
-}
-
 .navbar-nav .nav-link.active {
   color: #ffb703;
   background-color: #219ebc;
