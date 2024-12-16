@@ -1,13 +1,31 @@
 const express = require('express');
 const router = express.Router();
-const animeController = require('../controllers/animeController');
+const { 
+  getWatchingList,
+  getCompletedList,
+  getOnHoldList,
+  getDroppedList,
+  getPlanToWatchList
+ } = require('../controllers/animeController');
 
 router
-  .route('/animes')
-  .get((req, res) => animeController.getAllAnimes(req, res));
+  .route('/watching')
+  .get((req, res) => getWatchingList(req, res));
 
 router
-  .route('/animes/:id')
-  .get((req, res) => animeController.getAnimeById(req, res));
+  .route('/completed')
+  .get((req, res) => getCompletedList(req, res));
+
+router
+  .route('/onHold')
+  .get((req, res) => getOnHoldList(req, res));
+
+router
+  .route('/dropped')
+  .get((req, res) => getDroppedList(req, res));
+
+router
+  .route('/planToWatch')
+  .get((req, res) => getPlanToWatchList(req, res));
 
 module.exports = router;

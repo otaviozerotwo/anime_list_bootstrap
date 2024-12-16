@@ -1,39 +1,58 @@
 const { fetchFromApi } = require('../utils/apiClient');
+const listModel = require('../models/listModel');
 
-const animeController = {
-  /**
-   * @description Fetches the list of all animes from the MyAnimeList API.
-   * @param {Object} req - The request object.
-   * @param {Object} res - The response object.
-   * @returns {Promise<Object[]>} - A promise that resolves with an array of anime objects.
-   */
-  getAllAnimes: async (req, res) => {
-    try {
-      const data = await fetchFromApi('/anime');
-      res.status(200).json(data.data);
-    } catch (error) {
-      console.error(`Erro no animeController: ${error.message}`);
-      res.status(500).json({ error: error.message });
-    }
-  },
+async function fetchAnimeById(id) {
+  try {
+    const data = await fetchFromApi(`/anime/${id}`);
 
-  /**
-   * @description Fetches a specific anime by its ID from the MyAnimeList API.
-   * @param {Object} req - The request object, containing the anime ID in its parameters.
-   * @param {Object} res - The response object used to return the result.
-   * @returns {Promise<void>} - A promise that resolves when the response is sent.
-   */
-  getAnimeById: async (req, res) => {
-    try {
-      const id = req.params.id;
-      const data = await fetchFromApi(`/anime/${id}`);
-
-      res.status(200).json(data.data);
-    } catch (error) {
-      console.error(`Erro ao buscar anime pelo ID: ${error.message}`);
-      res.status(500).json({ error: error.message });
-    }
+    return data.data;
+  } catch (error) {
+    console.error(`Erro ao buscar anime com ID ${id}: ${error.message}`);
+    return null;
   }
 }
 
-module.exports = animeController;
+async function fechAnimeList(ids) {
+  const animePromises = ids.map(id => fetchAnimeById(id));
+  const animes = await Promise.all(animePromises);
+
+  return animes.filter(anime => anime !== null);
+}
+
+const getWatchingList = async (req, res) => {
+  const animes = await fechAnimeList(listModel.watching);
+
+  res.status(200).json(animes);
+};
+
+const getCompletedList = async (req, res) => {
+  const animes = await fechAnimeList(listModel.completed);
+
+  res.status(200).json(animes);
+}
+
+const getOnHoldList = async (req, res) => {
+  const animes = await fechAnimeList(listModel.onHold);
+
+  res.status(200).json(animes);
+}
+
+const getDroppedList = async (req, res) => {
+  const animes = await fechAnimeList(listModel.dropped);
+
+  res.status(200).json(animes);
+}
+
+const getPlanToWatchList = async (req, res) => {
+  const animes = await fechAnimeList(listModel.planToWatch);
+
+  res.status(200).json(animes);
+}
+
+module.exports = { 
+  getWatchingList,
+  getCompletedList,
+  getOnHoldList,
+  getDroppedList,
+  getPlanToWatchList
+};
